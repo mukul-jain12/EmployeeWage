@@ -16,14 +16,17 @@ public class EmpWageBuilder {
 		//Generate random value to check employee do work full time, part time or absent
 		double empcheck = Math.floor(Math.random()*10) % 3;
 
-		//Condition statement
-		if(is_full_time == empcheck)
-			empHours = 8;
-		else if(is_part_time == empcheck)
-			empHours = 4;
-		else
-			empHours = 0;
-		
+		//Condition statement switch case
+		switch(empcheck){
+			case is_full_time:
+				empHours = 8;
+				break;
+			case is_part_time
+				empHours = 4;
+				break;
+			default:
+				empHours = 0;
+		}
 		//Calculat employee wage
 		empWage = empHours * empRatePerHr;
 		System.out,println("Employee Wage : " + empWage);
