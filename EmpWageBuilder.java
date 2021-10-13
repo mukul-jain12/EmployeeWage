@@ -24,7 +24,7 @@ public class EmpWageBuilder {
 				case is_full_time:
 					empHours = 8;
 					break;
-				case is_part_time
+				case is_part_time:
 					empHours = 4;
 					break;
 				default:
